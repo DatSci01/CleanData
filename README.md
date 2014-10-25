@@ -16,14 +16,14 @@ The following provides additional details and background information about
 script processing to produce the tidy data set, "tidydata.txt". Both 
 "run_analysis.R" and "tidydata.txt" are included in the GitHub repo.
 
+To execute the script, use the source command 'source("data directory/run_analysis.R")' where 'data directory is the directory where run_analysis.R is stored. It requires that the folder 'UCI HAR Dataset' be present in the working directory to execute (see below).
+
 "run_analysis.R" requires the library "dplyr".  Per TA comments in the 
 forum, this script does not include code to install this library if it has 
 not been previously installed, but it does load this library.
 
 run_analysis.R includes code to download and unzip the data from the site 
-where is it located, but this code has been disabled since the project instructions indicate we can assume the folder "UCI HAR Dataset" (and subfolders) is available unzipped in the working directory. Code to delete the data files at the end of the script is also present but has also been disabled. As a result, the script requires the data folder "UCI HAR Dataset" (and subfolders) containing the project data be available in the working 
-directory when this script is executed. Those folders are left unchanged after
-script processing completes (the 'tidydata.txt' file produced by the script is written to the working directory, not the "UCI HAR Dataset" folder).
+where is it located, but this code has been disabled since the project instructions indicate we can assume the folder "UCI HAR Dataset" (and subfolders) is available unzipped in the working directory. Code to delete the data files at the end of the script is also present but has also been disabled. As a result, the script requires the data folder "UCI HAR Dataset" (and subfolders) containing the project data be available in the working directory when this script is executed. Those folders are left unchanged after script processing completes (the 'tidydata.txt' file produced by the script is written to the working directory, not the "UCI HAR Dataset" folder).
 
 Because the process of reading the datafiles and processing the data can be 
 lengthy, I also included several print statements throughout the script so 
